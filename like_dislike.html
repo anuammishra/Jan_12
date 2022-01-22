@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>LIKE COUNTER</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <h1 style="background-color: lightsteelblue;">COUNT THE LIKES AND DISLIKES</h1>
+        
+    <div>
+        
+        <button onclick="like()">👍</button>
+        <button onclick="dislike()">👎</button><br>
+        <p id="like">0</p>
+        <p id="dislike">0</p>
+    </div>
+    <script>
+        var a=0;
+var b=0;
+
+function like(){
+  
+   a=a+1;
+    document.getElementById("like").innerText=a;
+}
+function dislike(){
+  
+    b=b-1;
+     document.getElementById("dislike").innerText=b;
+ }
+    </script>
+
+    <style>
+        div{
+    margin: 0cm;
+}
+h1{
+    color: blueviolet;
+    
+}
+
+div{
+    background-color: rgb(29, 219, 130);
+    height: 10cm;
+    width: 9cm;
+}
+body{
+    background-color: rgb(231, 231, 233);
+}
+button{
+    font-size:xx-large;
+    margin: 1cm;
+}
+p{
+    display: inline;
+    height: 1cm;
+    width: 3cm;
+    margin-left: 2cm;
+    font-size: xx-large;
+}
+@media (max-width:600px){
+    div{
+        height: 10cm;
+        width: 8cm;
+    }
+}
+    </style>
+    </body>
+</html>
